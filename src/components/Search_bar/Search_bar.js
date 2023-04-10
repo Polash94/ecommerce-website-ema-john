@@ -8,6 +8,7 @@ const Search_bar = () => {
             </div>
 
         <div class='ml-5 mt-1'>
+        
         <svg
       viewBox="0 0 24 24"
       fill="currentColor"
