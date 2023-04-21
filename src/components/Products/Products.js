@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Products = (props) => {
    
 
-    const { name, img, price, stock, seller } = props.product;
+    const { name, img, price, stock, seller,id } = props.product;
     return (
         <div class='flex justify-around'>
 
@@ -14,7 +15,7 @@ const Products = (props) => {
             </div>
 
             <div className="product-details">
-                <p class='text-blue-600'>{name}</p>
+                <p class='text-blue-600'><Link to={'/products/'+id}>{name}</Link></p>
                 <br />
                 <p class=''>By:{seller}</p>
                 <br />
